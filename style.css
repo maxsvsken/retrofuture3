@@ -2771,12 +2771,21 @@ details[open].expertise-item .exp-content {
     .hero-image-wrapper {
         margin-top: 0;
         margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image-wrapper .art-frame {
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
     }
 
     .hero-image {
         max-height: 55vh;
         width: auto;
-        margin: 0 auto;
+        display: block;
     }
 
     .hero-marquee-container {
