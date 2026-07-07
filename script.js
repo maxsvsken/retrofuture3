@@ -226,12 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.ScrollTrigger) ScrollTrigger.refresh();
                 let yPos = 0;
                 if (!isHome) {
-                    if (targetElement.navTrigger) {
-                        yPos = targetElement.navTrigger.start;
-                    } else {
-                        const navHeight = document.querySelector('.navbar')?.offsetHeight || 70;
-                        yPos = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
-                    }
+                    const navHeight = document.querySelector('.navbar')?.offsetHeight || 70;
+                    yPos = targetElement.getBoundingClientRect().top + window.scrollY - navHeight;
                 }
                 if (window.lenis) {
                     window.lenis.scrollTo(yPos, { duration: 0.9, ease: (t) => 1 - Math.pow(1 - t, 3) });

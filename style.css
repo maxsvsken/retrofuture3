@@ -2831,4 +2831,21 @@ details[open].expertise-item .exp-content {
     }
 }
 
+/* Tablet and portable devices (up to 1024px) */
+@media (max-width: 1024px) {
+    .dot-nav {
+        right: 20px !important;
+    }
+    .dot-nav ul {
+        gap: 12px !important;
+    }
+}
+
+/* Mobile phones (up to 768px) */
+@media (max-width: 768px) {
+    .dot-nav {
+        display: none !important;
+    }
+}
+
 
