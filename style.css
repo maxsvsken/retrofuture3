@@ -2854,6 +2854,38 @@ details[open].expertise-item .exp-content {
     .dot-nav {
         display: none !important;
     }
+
+    .footer-form-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .footer-form-container > div:first-child {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .footer-form-container .contact-title {
+        text-align: center !important;
+    }
+
+    .form-inputs-row {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    .footer-logo-col-right {
+        flex: 1 !important;
+        width: 100% !important;
+        max-width: 200px !important;
+    }
+
+    .footer-form-logo {
+        max-height: 160px !important;
+        -webkit-box-reflect: below 2px linear-gradient(transparent 70%, rgba(255, 255, 255, 0.1)) !important;
+    }
 }
 
 
