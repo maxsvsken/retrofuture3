@@ -1,14 +1,17 @@
 /* Strict Business Design CSS with Pop-Art Accents */
 :root {
-    /* Strict Color Palette */
-    --color-black: #0F0F0F;
-    --color-dark: #1A1A1A;
-    --color-grey-dark: #333333;
-    --color-grey-light: #F4F4F4;
+    /* Strict Dark-Blue Color Palette */
+    --color-black: #FFFFFF;
+    --color-dark: #000c20;
+    --color-grey-dark: #CCD6F6;
+    --color-grey-light: #002553;
     --color-white: #FFFFFF;
-    --color-border: #E0E0E0;
+    --color-border: rgba(255, 255, 255, 0.15);
     --color-accent: #FF2A2A;
-    /* A pop of Lichtenstein red */
+
+    /* Background Gradient Variables */
+    --color-bg-primary: #001230;
+    --color-bg-gradient: radial-gradient(circle at 50% 30%, #003e85 0%, #001230 100%);
 
     /* Typography */
     --font-heading: 'Oswald', sans-serif;
@@ -30,7 +33,7 @@ html {
 body {
     font-family: var(--font-text);
     color: var(--color-black);
-    background-color: var(--color-white);
+    background: var(--color-bg-gradient) fixed;
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -100,7 +103,7 @@ body {
 .hero {
     position: relative;
     overflow: visible;
-    background-color: var(--color-white);
+    background-color: transparent;
     min-height: 100vh;
     min-height: 100dvh;
     height: auto;
@@ -129,21 +132,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Grayscale pop-art pattern */
-    background-color: var(--color-white);
-    background-image: url('images/pink-radial-dotted-comic-background-speed-lines-wallpaper-with-pop-art-halftone-texture-anime_497399-2918.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* No blend mode needed for grayscale, or use screen with neutral color */
-    background-blend-mode: normal;
-
-    /* Grayscale filter as requested */
-    filter: grayscale(100%) contrast(1.2) brightness(1.1);
-
+    /* Transparent or subtle radial gradient shadow */
+    background-color: transparent;
     opacity: 0.25;
-    /* Visible but professional */
     z-index: 0;
     pointer-events: none;
 }
@@ -201,16 +192,16 @@ body {
     top: -40px;
     right: -20px;
     max-width: 70%;
-    background: var(--color-white);
+    background: #FFFFFF;
     padding: 25px 30px;
-    border: 3px solid var(--color-black);
+    border: 3px solid #000000;
     border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--color-black);
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    color: #000000;
+    box-shadow: 10px 10px 0px #000000;
     transform: rotate(3deg);
     text-align: center;
     line-height: 1.2;
@@ -222,8 +213,8 @@ body {
 .speech-bubble::before {
     content: '';
     position: absolute;
-    background: var(--color-white);
-    border: 3px solid var(--color-black);
+    background: #FFFFFF;
+    border: 3px solid #000000;
     border-radius: 50%;
     z-index: 1;
 }
@@ -234,7 +225,7 @@ body {
     height: 25px;
     bottom: -30px;
     left: 20%;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+    box-shadow: 4px 4px 0px #000000;
 }
 
 /* Smallest circle */
@@ -243,7 +234,7 @@ body {
     height: 15px;
     bottom: -50px;
     left: 10%;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 0px #000000;
 }
 
 .bubble-wide {
@@ -258,8 +249,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    background-color: #000c20;
+    color: #FFFFFF;
     padding: 18px 0;
     overflow: hidden;
     z-index: 500;
@@ -407,8 +398,8 @@ body {
 
 /* 01 Legend Section - Pop-Art Halftone Dots Background */
 .legend-section {
-    background-color: var(--color-white);
-    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 20%, transparent 20%);
+    background-color: transparent;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 20%, transparent 20%);
     background-size: 15px 15px;
     /* Classic pop-art dot size */
 }
@@ -423,14 +414,14 @@ body {
 .director-section {
     position: relative;
     overflow: visible;
-    background-color: var(--color-white) !important;
+    background-color: transparent !important;
     z-index: 20 !important;
 }
 
 .myths-section {
     position: relative;
     overflow: visible;
-    background-color: var(--color-white) !important;
+    background-color: transparent !important;
     z-index: 20 !important;
 }
 
@@ -441,11 +432,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/abstract-gradient-white-and-gray-color-of-stripe-rounded-lines-pattern-template-overlapping-with-halftone-design-background-illustration-vector.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.4;
+    background-color: transparent;
     z-index: 0;
     pointer-events: none;
 }
@@ -457,11 +444,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/modern-abstract-background-with-elegant-wave-circle-shape-design-futuristic-concept_57082-2774.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.35;
+    background-color: transparent;
     z-index: 0;
     pointer-events: none;
 }
@@ -472,12 +455,12 @@ body {
     z-index: 1;
 }
 
-/* Enhanced Readability for Ray Backgrounds */
+/* Enhanced Readability for Dark Backgrounds */
 .hero-title,
 .hero-subtitle,
 .director-section .section-title,
 .myths-section .section-title {
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 42, 42, 0.1);
 }
 
 .director-text p,
@@ -488,15 +471,15 @@ body {
 
 /* 02 Today Section - Classic Grid Pattern */
 .today-section {
-    background-color: var(--color-white);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1.5px, transparent 1.5px),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1.5px, transparent 1.5px);
+    background-color: transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1.5px, transparent 1.5px);
     background-size: 35px 35px;
 }
 
 /* 03 Code Section - Dense Halftone dots for dark bg */
 .bg-dark.code-section {
-    background-color: var(--color-dark);
+    background-color: transparent;
     background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 8px 8px;
 }
@@ -555,12 +538,12 @@ body {
 }
 
 .navbar-scrolled {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 18, 48, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 12px 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-scrolled .logo {
@@ -591,7 +574,7 @@ body {
     right: 0;
     width: 280px;
     height: auto;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(0, 18, 48, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
@@ -602,8 +585,8 @@ body {
     padding: 25px;
     list-style: none;
     border-radius: 12px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 10px;
     transform-origin: top right;
 }
@@ -722,7 +705,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: var(--color-white);
+    background: transparent;
     position: relative;
     overflow: visible;
     padding: 100px 0 0 0 !important; /* Removed bottom padding to keep marquee in viewport */
@@ -773,17 +756,17 @@ body {
 
 .feature-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.3s ease;
 }
 
 .feature-item:hover {
-    background: var(--color-white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transform: translateY(-3px);
 }
 
@@ -803,7 +786,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
-    color: #333;
+    color: var(--color-grey-dark);
 }
 
 @media (max-width: 768px) {
@@ -1097,14 +1080,16 @@ details[open].faq-item p {
 
 .strict-card {
     padding: 50px;
-    background: var(--color-white);
+    background: rgba(0, 30, 70, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .strict-card:hover {
     border-color: var(--color-accent);
-    box-shadow: 0 15px 40px rgba(255, 42, 42, 0.1);
+    box-shadow: 0 15px 40px rgba(255, 42, 42, 0.2);
 }
 
 .card-num {
@@ -1856,12 +1841,13 @@ details[open].faq-item p {
     }
 
     .navbar.menu-open {
-        background: rgba(255, 255, 255, 0.9) !important;
+        background: rgba(0, 18, 48, 0.95) !important;
         backdrop-filter: blur(12px) !important;
         -webkit-backdrop-filter: blur(12px) !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    .nav-links {
         display: none;
         position: absolute;
         top: 100%;
@@ -1873,8 +1859,11 @@ details[open].faq-item p {
         flex-direction: column;
         align-items: center;
         padding: 25px 0;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
         z-index: 9999;
+        background: rgba(0, 18, 48, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
     }
 
     .nav-links.nav-active {
@@ -2100,12 +2089,12 @@ details[open].faq-item p {
 }
 
 .modal-content {
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(0, 18, 48, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     margin: 20px;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width: 90%;
     max-width: 750px;
     max-height: 85vh;
@@ -2347,7 +2336,7 @@ details[open].faq-item p {
 .together-section {
     position: relative;
     overflow: hidden;
-    background-color: var(--color-white) !important;
+    background-color: transparent !important;
     min-height: auto !important;
     display: flex;
     align-items: center;
@@ -2360,12 +2349,7 @@ details[open].faq-item p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/pink-yellow-pop-art-background-with-halftone-dots-in-retro-comic-style-illustration-free-vector.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%) brightness(1.1) contrast(1.1);
-    opacity: 0.15;
+    background-color: transparent;
     z-index: 0;
     pointer-events: none;
 }
@@ -2393,7 +2377,9 @@ details[open].faq-item p {
     font-weight: 600;
     color: var(--color-black);
     padding: 20px 25px;
-    background: #fff;
+    background: rgba(0, 30, 70, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     display: flex;
     align-items: center;
@@ -2406,7 +2392,8 @@ details[open].faq-item p {
     grid-column: 1 / -1;
     justify-content: center;
     text-align: center;
-    background: #fdfdfd;
+    background: rgba(255, 42, 42, 0.1);
+    border-color: rgba(255, 42, 42, 0.3);
 }
 
 .together-list li::before {
@@ -2585,7 +2572,9 @@ details[open].expertise-item .exp-content {
     flex: 0 0 calc(33.333% - 16px);
     min-width: 300px;
     scroll-snap-align: start;
-    background: var(--color-white);
+    background: rgba(0, 30, 70, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--color-border);
     border-radius: 20px;
     padding: 40px 36px;
