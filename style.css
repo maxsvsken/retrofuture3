@@ -2,16 +2,16 @@
 :root {
     /* Strict Dark-Blue Color Palette */
     --color-black: #b3c0e2;
-    --color-dark: #06000b;
+    --color-dark: #000c20;
     --color-grey-dark: #b3c0e2;
-    --color-grey-light: #0b0e24;
+    --color-grey-light: #002553;
     --color-white: #FFFFFF;
     --color-border: rgba(255, 255, 255, 0.15);
     --color-accent: #FF2A2A;
 
     /* Background Gradient Variables */
-    --color-bg-primary: #06000b;
-    --color-bg-gradient: radial-gradient(circle at 50% 0%, rgba(21, 104, 240, 0.4) 0%, rgba(6, 0, 11, 0) 70%), radial-gradient(circle at 100% 60%, rgba(21, 104, 240, 0.25) 0%, rgba(6, 0, 11, 0) 50%), #06000b;
+    --color-bg-primary: #001230;
+    --color-bg-gradient: radial-gradient(circle at 50% 30%, #003e85 0%, #001230 100%);
 
     /* Typography */
     --font-heading: 'Oswald', sans-serif;
@@ -33,7 +33,7 @@ html {
 body {
     font-family: var(--font-text);
     color: var(--color-black);
-    background: var(--color-bg-gradient) fixed;
+    background: #000c20;
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -41,20 +41,14 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* Subtle Noise Overlay for Tactile Texture */
-body::before {
-    content: "";
+#silk-canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Placed behind all content to keep text 100% sharp and readable */
-    opacity: 0.14; /* Increased visibility for the coarser texture */
+    z-index: -1; /* Placed behind all content */
     pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.35' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 200px 200px;
 }
 
 /* Typography Overrides to keep Headings and Titles White */
