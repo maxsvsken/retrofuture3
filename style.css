@@ -1267,7 +1267,7 @@ details[open].faq-item p {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: var(--color-black);
+    color: #FFFFFF;
     transition: color 0.3s ease;
 }
 
@@ -2494,7 +2494,7 @@ details[open].faq-item p {
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--color-black);
+    color: #FFFFFF;
     flex: 1;
     transition: color 0.3s ease;
 }
