@@ -674,7 +674,8 @@ h1, h2, h3, h4, h5, h6,
 .dot-nav {
     position: fixed;
     top: 50%;
-    left: 40px;
+    right: 40px;
+    left: auto;
     transform: translateY(-50%);
     z-index: 1000;
 }
@@ -2018,6 +2019,7 @@ details[open].faq-item p {
     position: fixed !important;
     top: 50% !important;
     right: 40px !important;
+    left: auto !important;
     transform: translateY(-50%) !important;
     z-index: 100000 !important;
     pointer-events: auto !important;
