@@ -486,7 +486,7 @@ body {
 
 /* Footer - Sparse Dots */
 .bg-black.site-footer {
-    background-color: var(--color-black);
+    background-color: var(--color-dark);
     background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 20px);
     background-size: 40px 40px;
 }
@@ -1381,7 +1381,7 @@ details[open].faq-item p {
 
 /* --- Audience Section --- */
 .audience-section {
-    background-color: var(--color-black) !important;
+    background-color: transparent !important;
     min-height: auto !important;
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
