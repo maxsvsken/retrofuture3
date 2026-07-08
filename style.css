@@ -2,16 +2,16 @@
 :root {
     /* Strict Dark-Blue Color Palette */
     --color-black: #b3c0e2;
-    --color-dark: #000c20;
+    --color-dark: #06000b;
     --color-grey-dark: #b3c0e2;
-    --color-grey-light: #002553;
+    --color-grey-light: #0b0e24;
     --color-white: #FFFFFF;
     --color-border: rgba(255, 255, 255, 0.15);
     --color-accent: #FF2A2A;
 
     /* Background Gradient Variables */
-    --color-bg-primary: #001230;
-    --color-bg-gradient: radial-gradient(circle at 50% 30%, #003e85 0%, #001230 100%);
+    --color-bg-primary: #06000b;
+    --color-bg-gradient: radial-gradient(circle at 50% 0%, rgba(21, 104, 240, 0.4) 0%, rgba(6, 0, 11, 0) 70%), radial-gradient(circle at 100% 60%, rgba(21, 104, 240, 0.25) 0%, rgba(6, 0, 11, 0) 50%), #06000b;
 
     /* Typography */
     --font-heading: 'Oswald', sans-serif;
