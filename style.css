@@ -1,9 +1,9 @@
 /* Strict Business Design CSS with Pop-Art Accents */
 :root {
     /* Strict Dark-Blue Color Palette */
-    --color-black: #FFFFFF;
+    --color-black: #b3c0e2;
     --color-dark: #000c20;
-    --color-grey-dark: #CCD6F6;
+    --color-grey-dark: #b3c0e2;
     --color-grey-light: #002553;
     --color-white: #FFFFFF;
     --color-border: rgba(255, 255, 255, 0.15);
@@ -39,6 +39,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+/* Typography Overrides to keep Headings and Titles White */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.hero-subtitle,
+.section-title,
+.contact-title,
+.audience-card-title,
+.strict-card h3,
+.modal-body h3 {
+    color: #FFFFFF !important;
 }
 
 /* Typography Utilities */
@@ -508,20 +520,22 @@ body {
 .btn-primary {
     display: inline-block;
     padding: 16px 40px;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    background-color: var(--color-accent);
+    color: #FFFFFF;
     text-decoration: none;
     font-family: var(--font-heading);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 1px solid var(--color-black);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-accent);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: transparent;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
 }
 
 /* Navigation */
